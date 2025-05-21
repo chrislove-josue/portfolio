@@ -1,7 +1,7 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink, GitPullRequest } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -106,7 +106,7 @@ export function ProjectsSection() {
               >
                 <div className="relative aspect-video overflow-hidden">
                   <Image
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image || "/img/placeholder.svg"}
                     alt={t(project.titleKey)}
                     fill
                     className="p-4 transition-transform duration-500 group-hover:scale-105"
@@ -139,7 +139,7 @@ export function ProjectsSection() {
                     className="transition-all duration-300 group-hover:border-primary group-hover:text-primary"
                   >
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" />
+                      <GitPullRequest className="mr-2 h-4 w-4" />
                       {t("projects.code")}
                     </a>
                   </Button>
