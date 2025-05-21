@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { useInView } from "react-intersection-observer"
 import { useLanguage } from "@/contexts/language-context"
 
