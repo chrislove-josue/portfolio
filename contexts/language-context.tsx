@@ -31,9 +31,9 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "À propos de moi",
     "about.p1":
-      "JJe suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d'expérience, j'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l'expérience utilisateur et augmenter les ventes en ligne.",
+      "JJe suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d\'expérience, j\'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l\'expérience utilisateur et augmenter les ventes en ligne.",
     "about.p2":
-      "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l\'écriture de code propre et maintenable et en la création d\'expériences utilisateur intuitives.",
+      "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n\'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l\'écriture de code propre et maintenable et en la création d\'expériences utilisateur intuitives.",
     "about.p3":
       "Quand je ne code pas, vous pouvez me trouver en randonnée, en train de lire des romans de science-fiction ou d'écouter de la musique",
     "about.resume": "Télécharger CV",
