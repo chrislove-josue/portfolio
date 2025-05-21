@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "À propos de moi",
     "about.p1":
-      "JJe suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d\'expérience, j\'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l\'expérience utilisateur et augmenter les ventes en ligne.",
+      "Je suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d\'expérience, j\'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l\'expérience utilisateur et augmenter les ventes en ligne.",
     "about.p2":
       "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n\'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l\'écriture de code propre et maintenable et en la création d\'expériences utilisateur intuitives.",
     "about.p3":
@@ -51,7 +51,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.weather.title": "Tableau de Bord Météo",
     "projects.weather.description":
       "Un tableau de bord météo qui affiche les données météorologiques actuelles et prévues pour plusieurs emplacements.",
-    "projects.code": "Code",
+    "projects.code": "Code source",
     "projects.demo": "Visiter",
 
     // Skills Section
@@ -78,17 +78,17 @@ const translations: Record<Language, Record<string, string>> = {
 
   fon: {
     // Navigation
-    "nav.about": "Xo ɖo ku",
+    "nav.about": "Mɛ̌ un ka nyí",
     "nav.projects": "Azɔ̌ ce lɛ",
     "nav.skills": "Nǔwukpikpé ce lɛ",
-    "nav.contact": "Ylɔ mi",
+    "nav.contact": "Ylɔ̌ mi",
 
     // Hero Section
     "hero.title": "Un do gbe nu mi, nye wɛ nyí",
     "hero.subtitle": "Mɛ e nɔ blo azɔ̌ internet tɔn ganji",
 
     // About Section
-    "about.title": "Xo ɖo ku ce",
+    "about.title": "Mɛ̌ un ka nyí?",
     "about.p1":
       "Un nyí nǔɖíɖótɔ́ ɖé bo ɖó nǔnywɛ syɛnsyɛn ɖò nǔnywɛ xwitixwiti sín nǔ lɛ mɛ, bo lɛ́ ɖó nukún ɖagbe dó nǔɖiɖó lɛ wu. Un ko w’azɔ̌ nú xwè 2 jɛji, bo ko w’azɔ̌ ɖò azɔ̌ vovo lɛ jí, bɛ́sín tɛn ɛntɛnɛti tɔn ajɔ̌wiwa tɔn kpɛví kpɛví lɛ jí kaka jɛ nǔ e è nɔ zán ɖò azɔ̌xwé lɛ é jí. Un lɛ́ tuùn azɔ̌ tawun bo nɔ bló tɛn ɛntɛnɛti tɔn e jí è nɔ sà nǔ ɖè bɔ ye nɔ w’azɔ̌ ganji bo nɔ lɛ́ dɔn mɛ lɛ é, bɔ è bló ye bonu mɛ e nɔ zán lɛ é na mɔ nǔ jɛ nǔ mɛ ganji, lobo na lɛ́ bló bɔ nǔ e è nɔ sà ɖò Ɛntɛnɛti jí lɛ é na jɛji.",
     "about.p2": "Sín hwenu e un mɔ tutoblonunu ɔ é ɔ, gbɛ̀ ɔ bǐ wɛ hun nú mì. Web developpement, ɖò taji ɔ, ko huzu nǔ hú nǔnywɛ xwitixwiti sín azɔ̌ ɖé: é nyí wanyiyi nǔgbo ɖé, nǔnywɛ xwitixwiti sín nǔ e nɔ xò nǔɖiɖó, linlin kpo nǔ yɔyɔ̌wiwa kpo kplé é. Sín hwenɛnu ɔ, un kpó ɖò nǔ kplɔ́n wɛ bo ɖò nǔwukpikpé ce lɛ jlaɖó wɛ bo na dó sixu nɔ nukɔn ɖò tɛn ɛntɛnɛti tɔn lɛ ɖiɖó ɖ’ayǐ mɛ. Un ɖi nǔ nú azɔ̌ e mɛ́, bɔ è sixu hɛn ɖ’ayǐ é kpo nǔ e mɛ e nɔ zán lɛ é nɔ mɔ nǔ jɛ wu lɛ é ɖiɖó kpo.",
@@ -112,8 +112,8 @@ const translations: Record<Language, Record<string, string>> = {
     "skills.subtitle": "Un ko plɔn nǔ susu. Nukunnumɔ jɛ nu mɛ ce lɛ ɖíe.",
 
     // Contact Section
-    "contact.title": "Ylɔ mi",
-    "contact.subtitle": "A ɖo azɔ̌ ɖé a jlo na wa a? Ylɔ mi!",
+    "contact.title": "Ylɔ̌ mi",
+    "contact.subtitle": "A ɖo azɔ̌ ɖé a jlo na wa a? Ylɔ̌ mi!",
     "contact.name": "Nyíkɔ",
     "contact.email": "Email",
     "contact.message": "Wɛn",
