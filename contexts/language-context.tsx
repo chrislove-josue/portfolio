@@ -31,11 +31,11 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "À propos de moi",
     "about.p1":
-      "Je suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Avec plus de 5 ans d'expérience, j'ai travaillé sur une variété de projets, des sites web pour petites entreprises aux applications d'entreprise complexes.",
+      "Je suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Avec plus de 2 ans d'expérience, j'ai travaillé sur une variété de projets, des sites web pour petites entreprises aux applications d'entreprise complexes.",
     "about.p2":
-      "Mon parcours dans la technologie a commencé lorsque j'ai construit mon premier site web à 15 ans. Depuis, je n'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l'écriture de code propre et maintenable et en la création d'expériences utilisateur intuitives.",
+      "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l'écriture de code propre et maintenable et en la création d'expériences utilisateur intuitives.",
     "about.p3":
-      "Quand je ne code pas, vous pouvez me trouver en randonnée, en train de lire des romans de science-fiction ou d'expérimenter de nouvelles recettes en cuisine.",
+      "Quand je ne code pas, vous pouvez me trouver en randonnée, en train de lire des romans de science-fiction ou d'écouter de la musique",
     "about.resume": "Télécharger CV",
 
     // Projects Section
@@ -52,7 +52,7 @@ const translations: Record<Language, Record<string, string>> = {
     "projects.weather.description":
       "Un tableau de bord météo qui affiche les données météorologiques actuelles et prévues pour plusieurs emplacements.",
     "projects.code": "Code",
-    "projects.demo": "Démo",
+    "projects.demo": "Visiter",
 
     // Skills Section
     "skills.title": "Compétences & Expertise",
@@ -90,7 +90,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "Xo ɖo ku ce",
     "about.p1":
-      "Un nyí mɛ e nɔ blo azɔn internet tɔn bo nɔ jlo na mɔ nǔ e nyɔ. Un ko wa azɔn na xwe atɔn bo ko blo azɔn susu.",
+      "Un nyí mɛ e nɔ blo azɔn internet tɔn bo nɔ jlo na mɔ nǔ e nyɔ. Un ko wa azɔn na xwe we bo ko blo azɔn susu.",
     "about.p2": "Un jɛ azɔn internet tɔn jí hwenu e un ɖo xwe wuatɔn. Sín hwenu enɛ, un nɔ plɔn nǔ yɔyɔ lɛ.",
     "about.p3": "Hwenu e un ma nɔ blo azɔn internet tɔn ǎ, un nɔ yi zɔn, un nɔ xa wema alǒ un nɔ ɖa nǔ.",
     "about.resume": "Wema azɔn ce tɔn",

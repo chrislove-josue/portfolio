@@ -17,28 +17,69 @@ export function ProjectsSection() {
 
   const projects = [
     {
-      titleKey: "projects.ecommerce.title",
-      descriptionKey: "projects.ecommerce.description",
-      image: "/placeholder.svg?height=300&width=600",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project1",
+      titleKey: "Nextmux Devis",
+      descriptionKey: "Gestion des devis et factures",
+      image: "/img/Nextmux-white.png?height=300&width=600",
+      liveUrl: "https://nextmux.net/ecosystem/portfolio",
+      githubUrl: "https://github.com/VarDumpMan/eazzylotto.git",
+
     },
     {
-      titleKey: "projects.taskapp.title",
-      descriptionKey: "projects.taskapp.description",
-      image: "/placeholder.svg?height=300&width=600",
-      tags: ["Next.js", "TypeScript", "Prisma", "Tailwind CSS"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project2",
+      titleKey: "Eazzy Lotto",
+      descriptionKey: "Une plateforme de prédiction de combinaisons gagnantes de lotterie.",
+      image: "/img/eazyloto.png?height=300&width=600",
+      liveUrl: "https://www.eazzylotto.com",
+      githubUrl: "https://github.com/VarDumpMan/eazzylotto.git",
+
     },
     {
-      titleKey: "projects.weather.title",
-      descriptionKey: "projects.weather.description",
-      image: "/placeholder.svg?height=300&width=600",
-      tags: ["React", "Redux", "Weather API", "Chart.js"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/yourusername/project3",
+      titleKey: "GPI GBEWA",
+      descriptionKey: "Logiciel d'administration des activités internes du projet Gbewa",
+      image: "/img/gbewa.png?height=300&width=600",
+      liveUrl: "https://www.figma.com/proto/c7boN2bUS9OkXOF7rAmizA/PGI-Gbewa?node-id=743-21874&starting-point-node-id=743%3A21874",
+    },
+    {
+      titleKey: "Asebat",
+      descriptionKey: "Boutique de vente des matériaux de construction",
+      image: "/img/asebat.png?height=300&width=600",
+      liveUrl: "https://www.figma.com/proto/rtEBR7BVeKJrCegkqTQicp/ASEBAT?node-id=8-163&t=aEoQ0NSTPjBsiN2Q-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A163",
+    },
+    {
+      titleKey: "The Glow Parlor",
+      descriptionKey: "Plateforme spécialisée dans la vente des produits de soins de la peau haut de gamme, conçus pour révéler votre éclat naturel.",
+      image: "/img/tgp.jpeg?height=300&width=600",
+      githubUrl: "https://gitlab.com/sounesatchougo/the-glow-parlor.git",
+
+    },
+
+    {
+      titleKey: "Solink",
+      descriptionKey: "Une plateforme internationale de publications, d'annonces et d'échanges de service.",
+      image: "/img/solink.png?height=300&width=600",
+      liveUrl: "https://www.solink.fr",
+    },
+
+    {
+      titleKey: "PREMIER CLASS SOCCER",
+      descriptionKey: "Une plateforme d'organisation des événements sportifs",
+      image: "/img/logo.svg?height=300&width=600",
+      liveUrl: "https://www.figma.com/proto/yuygQQTPIW7p6tvzdMDdpq/PREMIER-CLASS-SOCCER?node-id=6533-21569&t=8A7zxoPjMNlzYgN2-0&scaling=min-zoom&content-scaling=fixed&page-id=429%3A8295&starting-point-node-id=6533%3A21569&show-proto-sidebar=1",
+      githubUrl: "https://github.com/ProjetsNextmux/Front-Premier-Class-Soccer.git",
+
+    },
+    {
+      titleKey: "Greatflix",
+      descriptionKey: "Une plateforme offrant des services d'abonnement et de réabonnement à Netflix et Prime Video",
+      image: "/img/greatflix.jpeg?height=300&width=600",
+      liveUrl: "https://greatflixt.vercel.app/",
+      githubUrl: "https://gitlab.com/sounesatchougo/great.git",
+    },
+    {
+      titleKey: "SPA Mistinguett",
+      descriptionKey: "Salon de soins et de mode",
+      // image: "/img/greatflix.jpeg?height=300&width=600",
+      liveUrl: "https://spa-mistinguett.vercel.app/",
+      githubUrl: "https://gitlab.com/sounesatchougo/spa-mistinguett.git",
     },
   ]
 
@@ -46,10 +87,10 @@ export function ProjectsSection() {
     <section id="projects" ref={ref} className="py-8 md:py-16 lg:py-24">
       <div className="container">
         <div
-          className={`space-y-6 transition-all duration-1000 ${
-            inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
+          className={`space-y-6 transition-all duration-1000 ${inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
         >
+
           <div className="space-y-2 text-center">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
               {t("projects.title")}
@@ -69,7 +110,7 @@ export function ProjectsSection() {
                     src={project.image || "/placeholder.svg"}
                     alt={t(project.titleKey)}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="p-4 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <CardHeader>
@@ -79,7 +120,7 @@ export function ProjectsSection() {
                   <CardDescription className="text-sm sm:text-base">{t(project.descriptionKey)}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <div className="flex flex-wrap gap-2">
+                  {/* <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, tagIndex) => (
                       <Badge
                         key={tagIndex}
@@ -89,7 +130,7 @@ export function ProjectsSection() {
                         {tag}
                       </Badge>
                     ))}
-                  </div>
+                  </div> */}
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Button

@@ -15,7 +15,7 @@ export function LanguageSelectorMobile() {
   // Liste des langues disponibles avec leurs drapeaux
   const languages: Language[] = [
     { code: "fr", name: "Français", flag: "🇫🇷" },
-    { code: "fon", name: "Fon", flag: "🇧🇯" },
+    { code: "fon", name: "Fon", flag: "🇧🇯 (Bénin)" },
     { code: "en", name: "English", flag: "🇬🇧" },
     { code: "es", name: "Español", flag: "🇪🇸" },
   ]

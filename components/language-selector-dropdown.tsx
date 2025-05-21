@@ -52,7 +52,7 @@ export function LanguageSelectorDropdown() {
           <ChevronsUpDown className={cn("h-4 w-4 shrink-0 opacity-50", isMobile && "hidden")} />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className={isMobile ? "w-[180px] p-0" : "w-[140px] p-0"}>
+      <PopoverContent className={isMobile ? "w-[200px] p-0" : "w-[180px] p-0"}>
         <Command>
           <CommandInput placeholder="Rechercher..." />
           <CommandList>
