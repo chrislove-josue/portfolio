@@ -8,9 +8,9 @@ import { Header } from "@/components/header"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col max-w-6xl mx-auto px-4 md:px-6">
+    <div className="flex min-h-screen flex-col max-w-6xl mx-auto">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1  px-4 md:px-0">
         <HeroSection />
         <AboutSection />
         <ProjectsSection />

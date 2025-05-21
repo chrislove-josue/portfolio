@@ -62,11 +62,11 @@ export function Header() {
   return (
     <header
       ref={headerRef}
-      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-200 px-4 md:px-6 max-w-6xl mx-auto ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-200  max-w-6xl mx-auto ${
         isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container flex h-16 items-center justify-between  text-left">
+      <div className="container flex h-16 items-center justify-between  text-left px-4">
         <Link href="/" className="text-xl font-bold tracking-tighter transition-colors hover:text-primary">
            Nestor ATCHOUGO
         </Link>
