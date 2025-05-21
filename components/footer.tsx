@@ -1,6 +1,6 @@
 "use client"
 
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Facebook, Github,  Gitlab, Linkedin, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -23,7 +23,7 @@ export function Footer() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="https://github.com/yourusername"
+            href="https://github.com/chrislove-nestor"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
@@ -32,7 +32,7 @@ export function Footer() {
             <span className="sr-only">GitHub</span>
           </Link>
           <Link
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/chrislove-nestor"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
@@ -41,11 +41,38 @@ export function Footer() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           <Link
-            href="mailto:your.email@example.com"
+            href="mailto:Sounesatchougo@gmail.com"
             className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
           >
             <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
             <span className="sr-only">Email</span>
+          </Link>
+          <Link
+            href="https://wa.me/22998123353"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
+          >
+            <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+            <span className="sr-only">WhatsApp</span>
+          </Link>
+          <Link
+            href="https://www.facebook.com/Chrislove229"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
+          >
+            <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
+            <span className="sr-only">Facebook</span>
+          </Link>
+          <Link
+            href="https://gitlab.com/sounesatchougo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
+          >
+            <Gitlab className="h-4 w-4 sm:h-5 sm:w-5" />
+            <span className="sr-only">Gitlab</span>
           </Link>
         </div>
       </div>

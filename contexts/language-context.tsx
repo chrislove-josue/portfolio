@@ -31,9 +31,9 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "À propos de moi",
     "about.p1":
-      "Je suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Avec plus de 2 ans d'expérience, j'ai travaillé sur une variété de projets, des sites web pour petites entreprises aux applications d'entreprise complexes.",
+      "JJe suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d'expérience, j'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l'expérience utilisateur et augmenter les ventes en ligne.",
     "about.p2":
-      "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l'écriture de code propre et maintenable et en la création d'expériences utilisateur intuitives.",
+      "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l\'écriture de code propre et maintenable et en la création d\'expériences utilisateur intuitives.",
     "about.p3":
       "Quand je ne code pas, vous pouvez me trouver en randonnée, en train de lire des romans de science-fiction ou d'écouter de la musique",
     "about.resume": "Télécharger CV",
@@ -79,41 +79,41 @@ const translations: Record<Language, Record<string, string>> = {
   fon: {
     // Navigation
     "nav.about": "Xo ɖo ku",
-    "nav.projects": "Azɔn ce lɛ",
-    "nav.skills": "Nukunnumɔ jɛ nu mɛ lɛ",
+    "nav.projects": "Azɔ̌ ce lɛ",
+    "nav.skills": "Nǔwukpikpé ce lɛ",
     "nav.contact": "Ylɔ mi",
 
     // Hero Section
-    "hero.title": "Kudo, nye wɛ nyí",
-    "hero.subtitle": "Mɛ e nɔ blo azɔn internet tɔn ganji",
+    "hero.title": "Un do gbe nu mi, nye wɛ nyí",
+    "hero.subtitle": "Mɛ e nɔ blo azɔ̌ internet tɔn ganji",
 
     // About Section
     "about.title": "Xo ɖo ku ce",
     "about.p1":
-      "Un nyí mɛ e nɔ blo azɔn internet tɔn bo nɔ jlo na mɔ nǔ e nyɔ. Un ko wa azɔn na xwe we bo ko blo azɔn susu.",
-    "about.p2": "Un jɛ azɔn internet tɔn jí hwenu e un ɖo xwe wuatɔn. Sín hwenu enɛ, un nɔ plɔn nǔ yɔyɔ lɛ.",
-    "about.p3": "Hwenu e un ma nɔ blo azɔn internet tɔn ǎ, un nɔ yi zɔn, un nɔ xa wema alǒ un nɔ ɖa nǔ.",
-    "about.resume": "Wema azɔn ce tɔn",
+      "Un nyí nǔɖíɖótɔ́ ɖé bo ɖó nǔnywɛ syɛnsyɛn ɖò nǔnywɛ xwitixwiti sín nǔ lɛ mɛ, bo lɛ́ ɖó nukún ɖagbe dó nǔɖiɖó lɛ wu. Un ko w’azɔ̌ nú xwè 2 jɛji, bo ko w’azɔ̌ ɖò azɔ̌ vovo lɛ jí, bɛ́sín tɛn ɛntɛnɛti tɔn ajɔ̌wiwa tɔn kpɛví kpɛví lɛ jí kaka jɛ nǔ e è nɔ zán ɖò azɔ̌xwé lɛ é jí. Un lɛ́ tuùn azɔ̌ tawun bo nɔ bló tɛn ɛntɛnɛti tɔn e jí è nɔ sà nǔ ɖè bɔ ye nɔ w’azɔ̌ ganji bo nɔ lɛ́ dɔn mɛ lɛ é, bɔ è bló ye bonu mɛ e nɔ zán lɛ é na mɔ nǔ jɛ nǔ mɛ ganji, lobo na lɛ́ bló bɔ nǔ e è nɔ sà ɖò Ɛntɛnɛti jí lɛ é na jɛji.",
+    "about.p2": "Sín hwenu e un mɔ tutoblonunu ɔ é ɔ, gbɛ̀ ɔ bǐ wɛ hun nú mì. Web developpement, ɖò taji ɔ, ko huzu nǔ hú nǔnywɛ xwitixwiti sín azɔ̌ ɖé: é nyí wanyiyi nǔgbo ɖé, nǔnywɛ xwitixwiti sín nǔ e nɔ xò nǔɖiɖó, linlin kpo nǔ yɔyɔ̌wiwa kpo kplé é. Sín hwenɛnu ɔ, un kpó ɖò nǔ kplɔ́n wɛ bo ɖò nǔwukpikpé ce lɛ jlaɖó wɛ bo na dó sixu nɔ nukɔn ɖò tɛn ɛntɛnɛti tɔn lɛ ɖiɖó ɖ’ayǐ mɛ. Un ɖi nǔ nú azɔ̌ e mɛ́, bɔ è sixu hɛn ɖ’ayǐ é kpo nǔ e mɛ e nɔ zán lɛ é nɔ mɔ nǔ jɛ wu lɛ é ɖiɖó kpo.",
+    "about.p3": "Hwenu e un ma nɔ blo azɔ̌ internet tɔn ǎ, un nɔ yi zɔn, un nɔ xa wema alǒ un nɔ ɖa nǔ.",
+    "about.resume": "Wema azɔ̌ ce tɔn",
 
     // Projects Section
-    "projects.title": "Azɔn ce lɛ",
-    "projects.subtitle": "Azɔn ɖé lɛ e un ko wa. Azɔn ɖokpó ɖokpó ɖo nǔ e un plɔn sín.",
+    "projects.title": "azɔ̌ ce lɛ",
+    "projects.subtitle": "azɔ̌ ɖé lɛ e un ko wa. azɔ̌ ɖokpó ɖokpó ɖo nǔ e un plɔn sín.",
     "projects.ecommerce.title": "Sinsɛn sɔ nǔ tɔn",
     "projects.ecommerce.description": "Sinsɛn sɔ nǔ tɔn e ɖo nǔ susu.",
-    "projects.taskapp.title": "Sinsɛn azɔn tɔn",
-    "projects.taskapp.description": "Sinsɛn azɔn tɔn e nɔ ná mɛ lɛ blo azɔn kplé.",
+    "projects.taskapp.title": "Sinsɛn azɔ̌ tɔn",
+    "projects.taskapp.description": "Sinsɛn azɔ̌ tɔn e nɔ ná mɛ lɛ blo azɔ̌ kplé.",
     "projects.weather.title": "Sinsɛn jijɛ tɔn",
     "projects.weather.description": "Sinsɛn e nɔ ná mɛ lɛ mɔ jijɛ tɛnmɛ tɛnmɛ tɔn.",
     "projects.code": "Wěma",
     "projects.demo": "Kpɔn",
 
     // Skills Section
-    "skills.title": "Nukunnumɔ jɛ nu mɛ lɛ",
+    "skills.title": "Nǔwukpikpé ce lɛ",
     "skills.subtitle": "Un ko plɔn nǔ susu. Nukunnumɔ jɛ nu mɛ ce lɛ ɖíe.",
 
     // Contact Section
     "contact.title": "Ylɔ mi",
-    "contact.subtitle": "A ɖo azɔn ɖé a jlo na wa a? Ylɔ mi!",
+    "contact.subtitle": "A ɖo azɔ̌ ɖé a jlo na wa a? Ylɔ mi!",
     "contact.name": "Nyíkɔ",
     "contact.email": "Email",
     "contact.message": "Wɛn",
@@ -134,19 +134,19 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.skills": "Skills",
     "nav.contact": "Contact",
 
-    // Hero Section
-    "hero.title": "Hi, I'm",
-    "hero.subtitle": "Full Stack Developer specializing in building exceptional digital experiences",
+   // Hero Section
+   "hero.title": "Hi, I'm",
+   "hero.subtitle": "Full Stack Developer specializing in building exceptional digital experiences",
 
-    // About Section
-    "about.title": "About Me",
-    "about.p1":
-      "I'm a passionate developer with a strong foundation in web technologies and a keen eye for design. With over 5 years of experience, I've worked on a variety of projects from small business websites to complex enterprise applications.",
-    "about.p2":
-      "My journey in tech began when I built my first website at 15. Since then, I've been constantly learning and evolving my skills to stay at the forefront of web development. I believe in writing clean, maintainable code and creating intuitive user experiences.",
-    "about.p3":
-      "When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.",
-    "about.resume": "Download Resume",
+   // About Section
+   "about.title": "About Me",
+   "about.p1":
+     "I'm a passionate developer with a solid background in web technologies and a keen eye for design. With over 2 years of experience, I've worked on a variety of projects, ranging from small business websites to complex enterprise applications. I also specialize in creating high-performing and attractive e-commerce websites designed to optimize the user experience and boost online sales.",
+   "about.p2":
+     "Since I discovered programming, a whole new world opened up to me. Web development, in particular, became more than just a technical field: it became a real passion, an art combining creativity, logic, and innovation. Since then, I've never stopped learning and evolving my skills to stay at the forefront of web development. I believe in writing clean, maintainable code and creating intuitive user experiences.",
+   "about.p3":
+     "When I'm not coding, you can find me hiking, reading sci-fi novels, or listening to music.",
+   "about.resume": "Download Resume",
 
     // Projects Section
     "projects.title": "My Projects",
@@ -192,19 +192,21 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.skills": "Habilidades",
     "nav.contact": "Contacto",
 
-    // Hero Section
+      // Hero Section
     "hero.title": "Hola, soy",
     "hero.subtitle": "Desarrollador Full Stack especializado en crear experiencias digitales excepcionales",
 
     // About Section
     "about.title": "Sobre Mí",
     "about.p1":
-      "Soy un desarrollador apasionado con una sólida formación en tecnologías web y un buen ojo para el diseño. Con más de 5 años de experiencia, he trabajado en una variedad de proyectos, desde sitios web para pequeñas empresas hasta aplicaciones empresariales complejas.",
+      "Soy un desarrollador apasionado con una sólida formación en tecnologías web y un buen ojo para el diseño. Con más de 2 años de experiencia, he trabajado en una variedad de proyectos, desde sitios web para pequeñas empresas hasta aplicaciones empresariales complejas. También me especializo en crear sitios web de comercio electrónico atractivos y de alto rendimiento, diseñados para optimizar la experiencia del usuario y aumentar las ventas en línea.",
     "about.p2":
-      "Mi viaje en la tecnología comenzó cuando construí mi primer sitio web a los 15 años. Desde entonces, he estado constantemente aprendiendo y evolucionando mis habilidades para mantenerme a la vanguardia del desarrollo web. Creo en escribir código limpio y mantenible y en crear experiencias de usuario intuitivas.",
+      "Desde que descubrí la programación, se abrió un mundo completamente nuevo para mí. El desarrollo web, en particular, se convirtió en algo más que un campo técnico: se convirtió en una verdadera pasión, un arte que combina creatividad, lógica e innovación. Desde entonces, nunca he dejado de aprender y evolucionar mis habilidades para mantenerme a la vanguardia del desarrollo web. Creo en escribir código limpio y mantenible y en crear experiencias de usuario intuitivas.",
     "about.p3":
-      "Cuando no estoy programando, puedes encontrarme haciendo senderismo, leyendo novelas de ciencia ficción o experimentando con nuevas recetas en la cocina.",
+      "Cuando no estoy programando, me encontrarás haciendo senderismo, leyendo novelas de ciencia ficción o escuchando música.",
     "about.resume": "Descargar CV",
+
+
 
     // Projects Section
     "projects.title": "Mis Proyectos",
@@ -251,19 +253,20 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.skills": "Habilidades",
     "nav.contact": "Contato",
 
-    // Hero Section
-    "hero.title": "Olá, eu sou",
-    "hero.subtitle": "Desenvolvedor Full Stack especializado na criação de experiências digitais excepcionais",
-
-    // About Section
-    "about.title": "Sobre Mim",
-    "about.p1":
-      "Sou um desenvolvedor apaixonado com uma base sólida em tecnologias web e um olhar atento para o design. Com mais de 5 anos de experiência, trabalhei em uma variedade de projetos, desde sites para pequenas empresas até aplicações empresariais complexas.",
-    "about.p2":
-      "Minha jornada na tecnologia começou quando construí meu primeiro site aos 15 anos. Desde então, tenho aprendido constantemente e evoluído minhas habilidades para me manter na vanguarda do desenvolvimento web. Acredito em escrever código limpo e sustentável e criar experiências de usuário intuitivas.",
-    "about.p3":
-      "Quando não estou programando, você pode me encontrar fazendo trilhas, lendo romances de ficção científica ou experimentando novas receitas na cozinha.",
-    "about.resume": "Baixar Currículo",
+        // Hero Section
+        "hero.title": "Olá, eu sou",
+        "hero.subtitle": "Desenvolvedor Full Stack especializado na criação de experiências digitais excepcionais",
+    
+        // About Section
+        "about.title": "Sobre Mim",
+        "about.p1":
+          "Sou um desenvolvedor apaixonado com uma sólida formação em tecnologias web e um olhar atento para o design. Com mais de 2 anos de experiência, trabalhei em uma variedade de projetos, desde sites para pequenas empresas até aplicações empresariais complexas. Também me especializo na criação de sites de comércio eletrônico atrativos e de alto desempenho, projetados para otimizar a experiência do usuário e aumentar as vendas online.",
+        "about.p2":
+          "Desde que descobri a programação, um mundo completamente novo se abriu para mim. O desenvolvimento web, em particular, se tornou mais do que apenas uma área técnica: se tornou uma verdadeira paixão, uma arte que mistura criatividade, lógica e inovação. Desde então, nunca parei de aprender e evoluir minhas habilidades para me manter na vanguarda do desenvolvimento web. Acredito em escrever código limpo e sustentável e em criar experiências de usuário intuitivas.",
+        "about.p3":
+          "Quando não estou programando, você pode me encontrar fazendo trilhas, lendo romances de ficção científica ou ouvindo música.",
+        "about.resume": "Baixar CV",
+    
 
     // Projects Section
     "projects.title": "Meus Projetos",

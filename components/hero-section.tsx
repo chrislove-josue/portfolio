@@ -1,6 +1,14 @@
 "use client"
 
-import { ArrowDownIcon, Github, Linkedin, Mail } from "lucide-react"
+import {
+  ArrowDownIcon,
+  Facebook,
+  Github,
+  Gitlab,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/contexts/language-context"
@@ -38,13 +46,13 @@ export function HeroSection() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
             <Button asChild variant="outline" size="icon">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/chrislove-nestor" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
             <Button asChild variant="outline" size="icon">
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/chrislove-nestor" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
@@ -53,6 +61,24 @@ export function HeroSection() {
               <a href="mailto:Sounesatchougo@gmail.com">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="icon">
+              <a href="https://wa.me/22998123353" target="_blank" rel="noopener noreferrer">
+                <Phone className="h-5 w-5" />
+                <span className="sr-only">WhatsApp</span>
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="icon">
+              <a href="https://www.facebook.com/Chrislove229" target="_blank" rel="noopener noreferrer">
+                <Facebook className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="icon">
+              <a href="https://gitlab.com/sounesatchougo" target="_blank" rel="noopener noreferrer">
+                <Gitlab className="h-5 w-5" />
+                <span className="sr-only">Gitlab</span>
               </a>
             </Button>
           </div>

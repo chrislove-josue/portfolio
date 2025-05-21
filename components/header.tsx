@@ -68,7 +68,7 @@ export function Header() {
     >
       <div className="container flex h-16 items-center justify-between  text-left">
         <Link href="/" className="text-xl font-bold tracking-tighter transition-colors hover:text-primary">
-          Portfolio
+           Nestor ATCHOUGO
         </Link>
 
         {isMobile ? (

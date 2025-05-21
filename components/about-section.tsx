@@ -24,13 +24,13 @@ export function AboutSection() {
               <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
                 {t("about.title")}
               </h2>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl/relaxed">
+              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base md:text-lg ">
                 {t("about.p1")}
               </p>
             </div>
             <div className="space-y-2">
               <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base">{t("about.p2")}</p>
-              <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base">{t("about.p3")}</p>
+              {/* <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base">{t("about.p3")}</p> */}
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild>
