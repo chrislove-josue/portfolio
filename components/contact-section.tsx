@@ -1,7 +1,6 @@
-"use client"
+'use client'
 
 import type React from "react"
-
 import { useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
@@ -26,6 +25,7 @@ export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
+  const [formError, setFormError] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -34,10 +34,19 @@ export function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitSuccess(false)
+    setFormError(false)
     setSubmitError(null)
-
+    setSubmitSuccess(false)
+  
+    // Validation manuelle avec timeout
+    if (!formData.name || !formData.email || !formData.message) {
+      setFormError(true)
+      setTimeout(() => setFormError(false), 10000) 
+      return
+    }
+  
+    setIsSubmitting(true)
+  
     try {
       const response = await fetch("https://formsubmit.co/ajax/sounesatchougo@gmail.com", {
         method: "POST",
@@ -53,18 +62,16 @@ export function ContactSection() {
           _captcha: "true",
         }),
       })
-
+  
       const data = await response.json()
-
+  
       if (!response.ok) {
         throw new Error(data.message || "Une erreur est survenue lors de l'envoi du message")
       }
-
-      // Reset form and show success message
+  
       setFormData({ name: "", email: "", message: "" })
       setSubmitSuccess(true)
-
-      // Hide success message after 5 seconds
+  
       setTimeout(() => setSubmitSuccess(false), 5000)
     } catch (error) {
       console.error("Error:", error)
@@ -77,6 +84,7 @@ export function ContactSection() {
       setIsSubmitting(false)
     }
   }
+  
 
   const contactInfo = [
     {
@@ -153,7 +161,7 @@ export function ContactSection() {
                     id="name"
                     name="name"
                     placeholder={t("contact.name")}
-                    required
+                    
                     value={formData.name}
                     onChange={handleChange}
                     className="text-sm transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
@@ -167,7 +175,7 @@ export function ContactSection() {
                     id="email"
                     name="email"
                     placeholder={t("contact.email")}
-                    required
+                    
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
@@ -183,13 +191,20 @@ export function ContactSection() {
                   id="message"
                   name="message"
                   placeholder={t("contact.message")}
-                  required
+                  
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
                   className="text-sm transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               </div>
+
+              {formError && (
+  <p className="rounded-lg text-center text-xl bg-red-100 p-3 sm:p-4 text-red-800 dark:bg-red-900/30 dark:text-red-400 transition-all duration-500 animate-in fade-in slide-in-from-bottom-5">
+    {t("contact.send.message")}
+  </p>
+)}
+
               <Button
                 type="submit"
                 disabled={isSubmitting}
@@ -197,6 +212,7 @@ export function ContactSection() {
               >
                 {isSubmitting ? t("contact.sending") : t("contact.send")}
               </Button>
+
             </form>
             {submitSuccess && (
               <div className="rounded-lg bg-green-100 p-3 sm:p-4 text-green-800 dark:bg-green-900/30 dark:text-green-400 transition-all duration-500 animate-in fade-in slide-in-from-bottom-5">

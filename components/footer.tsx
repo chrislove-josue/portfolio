@@ -8,7 +8,7 @@ export function Footer() {
   const { t } = useLanguage()
 
   return (
-    <footer className="border-t py-4 sm:py-6 md:py-8">
+    <footer className="border-t py-6 sm:py-8 mb-12">
       <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
         <div className="flex flex-col items-center gap-2 md:items-start">
           <Link

@@ -59,18 +59,19 @@ const translations: Record<Language, Record<string, string>> = {
     "skills.subtitle":
       "J'ai développé un ensemble diversifié de compétences tout au long de ma carrière. Voici un aperçu de mon expertise technique.",
 
-    // Contact Section
-    "contact.title": "Contactez-moi",
-    "contact.subtitle":
-      "Vous avez un projet en tête ou souhaitez discuter d'opportunités potentielles ? N'hésitez pas à me contacter !",
-    "contact.name": "Nom",
-    "contact.email": "Email",
-    "contact.message": "Message",
-    "contact.send": "Envoyer le message",
-    "contact.sending": "Envoi en cours...",
-    "contact.success.title": "Merci pour votre message !",
-    "contact.success.message": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible.",
-    "contact.error.title": "Erreur",
+   // Contact Section
+"contact.title": "Contactez-moi",
+"contact.subtitle": "Vous avez un projet en tête ou souhaitez discuter d'opportunités potentielles ? N'hésitez pas à me contacter !",
+"contact.name": "Nom",
+"contact.email": "Email",
+"contact.message": "Message",
+"contact.send": "Envoyer le message",
+"contact.sending": "Envoi en cours...",
+"contact.success.title": "Merci pour votre message !",
+"contact.success.message": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible.",
+"contact.error.title": "Erreur",
+"contact.send.message": "Tous les champs sont obligatoires.",
+
 
     // Footer
     "footer.rights": "Tous droits réservés.",
@@ -122,6 +123,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.success.title": "Akpé!",
     "contact.success.message": "Un ko mɔ wɛn towe. Un na yí gbe na we kpɛɖé.",
     "contact.error.title": "Nǔ ɖé jɛ",
+"contact.send.message": "Nu bi ɖo dandan mɛ",
+
 
     // Footer
     "footer.rights": "Acɛ lɛ bí.",
@@ -180,6 +183,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.success.title": "Thank you for your message!",
     "contact.success.message": "Your message has been sent successfully. I'll get back to you as soon as possible.",
     "contact.error.title": "Error",
+"contact.send.message": "All fields are required.",
+
 
     // Footer
     "footer.rights": "All rights reserved.",
@@ -241,6 +246,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.success.title": "¡Gracias por tu mensaje!",
     "contact.success.message": "Tu mensaje ha sido enviado con éxito. Te responderé lo antes posible.",
     "contact.error.title": "Error",
+"contact.send.message": "Todos los campos son obligatorios.",
+
 
     // Footer
     "footer.rights": "Todos los derechos reservados.",
@@ -301,6 +308,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.success.title": "Obrigado pela sua mensagem!",
     "contact.success.message": "Sua mensagem foi enviada com sucesso. Entrarei em contato o mais breve possível.",
     "contact.error.title": "Erro",
+"contact.send.message": "Todos os campos são obrigatórios.",
+
 
     // Footer
     "footer.rights": "Todos os direitos reservados.",

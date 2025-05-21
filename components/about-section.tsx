@@ -32,13 +32,13 @@ export function AboutSection() {
               <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base">{t("about.p2")}</p>
               {/* <p className="max-w-[600px] text-gray-500 dark:text-gray-400 text-sm sm:text-base">{t("about.p3")}</p> */}
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            {/* <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild>
                 <a href="https://www.canva.com/design/DAF1usAlVF0/PrHzKumv_brxfSLAdYOYmg/edit?utm_content=DAF1usAlVF0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener noreferrer">
                   {t("about.resume")}
                 </a>
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-center order-1 md:order-2 mb-6 md:mb-0">
             <div className="relative h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] overflow-hidden rounded-full border-4 border-primary">
