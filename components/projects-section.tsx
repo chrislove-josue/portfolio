@@ -73,13 +73,13 @@ export function ProjectsSection() {
       liveUrl: "https://greatflixt.vercel.app/",
       githubUrl: "https://gitlab.com/sounesatchougo/great.git",
     },
-    {
-      titleKey: "SPA Mistinguett",
-      descriptionKey: "Salon de soins et de mode",
-      // image: "/img/greatflix.jpeg?height=300&width=600",
-      liveUrl: "https://spa-mistinguett.vercel.app/",
-      githubUrl: "https://gitlab.com/sounesatchougo/spa-mistinguett.git",
-    },
+    // {
+    //   titleKey: "SPA Mistinguett",
+    //   descriptionKey: "Salon de soins et de mode",
+    //   image: "/img/greatflix.jpeg?height=300&width=600",
+    //   liveUrl: "https://spa-mistinguett.vercel.app/",
+    //   githubUrl: "https://gitlab.com/sounesatchougo/spa-mistinguett.git",
+    // },
   ]
 
   return (
