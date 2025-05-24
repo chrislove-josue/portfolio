@@ -102,8 +102,8 @@ export function ContactSection() {
     {
       icon: <MapPin className="h-5 w-5 sm:h-6 sm:w-6" />,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,+CA",
+      value: "Cotonou, Bénin",
+      link: "https://maps.google.com/?q=9C4H%2BF4V%2C+Cotonou"
     },
   ]
 
