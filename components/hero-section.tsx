@@ -2,7 +2,6 @@
 
 import {
   ArrowDownIcon,
-  Facebook,
   Github,
   Gitlab,
   Linkedin,
@@ -46,7 +45,7 @@ export function HeroSection() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
             <Button asChild variant="outline" size="icon">
-              <a href="https://github.com/chrislove-nestor" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/chrislove-josue" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
@@ -67,12 +66,6 @@ export function HeroSection() {
               <a href="https://wa.me/22998123353" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-5 w-5" />
                 <span className="sr-only">WhatsApp</span>
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="icon">
-              <a href="https://www.facebook.com/Chrislove229" target="_blank" rel="noopener noreferrer">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
               </a>
             </Button>
             <Button asChild variant="outline" size="icon">
