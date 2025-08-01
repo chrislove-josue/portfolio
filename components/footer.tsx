@@ -57,15 +57,6 @@ export function Footer() {
             <span className="sr-only">WhatsApp</span>
           </Link>
           <Link
-            href="https://www.facebook.com/Chrislove229"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
-          >
-            <Facebook className="h-4 w-4 sm:h-5 sm:w-5" />
-            <span className="sr-only">Facebook</span>
-          </Link>
-          <Link
             href="https://gitlab.com/sounesatchougo"
             target="_blank"
             rel="noopener noreferrer"
