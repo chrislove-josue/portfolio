@@ -1,6 +1,6 @@
 "use client"
 
-import { Facebook, Github,  Gitlab, Linkedin, Mail, Phone } from "lucide-react"
+import { Github,  Gitlab, Linkedin, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
