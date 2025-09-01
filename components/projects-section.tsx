@@ -15,12 +15,20 @@ export function ProjectsSection() {
   const { t } = useLanguage()
 
   const projects = [
+    
+   {
+  titleKey: "AMAZING GROUP",
+  descriptionKey: "Agence spécialisée en communication et projets : créativité, construction, transport, promotion et résultats.",
+  image: "/img/logo_amazing_group.jpg?height=300&width=600",
+  liveUrl: "https://amazing-group.vercel.app",
+  githubUrl: "https://github.com/chrislove-josue/amazing-group.git",
+},
+
     {
       titleKey: "Nextmux Devis",
       descriptionKey: "Gestion des devis et factures",
       image: "/img/Nextmux-white.png?height=300&width=600",
       liveUrl: "https://nextmux.net/ecosystem/portfolio",
-      githubUrl: "https://github.com/VarDumpMan/eazzylotto.git",
 
     },
     {

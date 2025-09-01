@@ -20,12 +20,12 @@ export function SkillsSection() {
     {
       category: "Backend",
       icon: <Code2 className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL"],
+      items: ["Node.js", "RESTful APIs"],
     },
     {
       category: "Database",
       icon: <Database className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma", "Supabase"],
+      items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma"],
     },
     {
       category: "DevOps",
@@ -35,7 +35,7 @@ export function SkillsSection() {
     {
       category: "Design",
       icon: <Layers className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Figma", "Adobe XD", "UI/UX Principles", "Responsive Design", "Accessibility"],
+      items: ["Figma", "Adobe XD", "UI/UX Principles", "Responsive Design", "Accessibility", "Dribbble"],
     },
     {
       category: "Other",
