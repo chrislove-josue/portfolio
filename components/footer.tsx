@@ -1,6 +1,6 @@
 "use client"
 
-import { Github,  Gitlab, Linkedin, Mail, Phone } from "lucide-react"
+import { Github,  Gitlab, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -30,15 +30,6 @@ export function Footer() {
           >
             <Github className="h-4 w-4 sm:h-5 sm:w-5" />
             <span className="sr-only">GitHub</span>
-          </Link>
-          <Link
-            href="https://linkedin.com/in/chrislove-nestor"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-primary dark:text-gray-400 transition-all duration-300 hover:scale-125"
-          >
-            <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
-            <span className="sr-only">LinkedIn</span>
           </Link>
           <Link
             href="mailto:Sounesatchougo@gmail.com"

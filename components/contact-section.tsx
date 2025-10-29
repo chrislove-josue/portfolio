@@ -14,6 +14,7 @@ export function ContactSection() {
     threshold: 0.1,
     triggerOnce: true,
   })
+
   const { t } = useLanguage()
 
   const [formData, setFormData] = useState({
@@ -37,16 +38,16 @@ export function ContactSection() {
     setFormError(false)
     setSubmitError(null)
     setSubmitSuccess(false)
-  
-    // Validation manuelle avec timeout
+
+    // ✅ Validation de base
     if (!formData.name || !formData.email || !formData.message) {
       setFormError(true)
-      setTimeout(() => setFormError(false), 10000) 
+      setTimeout(() => setFormError(false), 5000)
       return
     }
-  
+
     setIsSubmitting(true)
-  
+
     try {
       const response = await fetch("https://formsubmit.co/ajax/sounesatchougo@gmail.com", {
         method: "POST",
@@ -58,33 +59,42 @@ export function ContactSection() {
           Nom: formData.name,
           Email: formData.email,
           Message: formData.message,
-          _subject: "Nouveau message du portfolio",
+          _subject: "📨 Nouveau message du portfolio",
           _captcha: "true",
         }),
       })
-  
+
       const data = await response.json()
-  
-      if (!response.ok) {
-        throw new Error(data.message || "Une erreur est survenue lors de l'envoi du message")
-      }
-  
+      if (!response.ok) throw new Error(data.message || "Erreur d’envoi du message")
+
+      // ✅ Si OK → Réinitialisation du formulaire
       setFormData({ name: "", email: "", message: "" })
       setSubmitSuccess(true)
-  
+
+      // 🔥 Envoi automatique sur WhatsApp
+      const whatsappMessage =
+        `👋 Bonjour, je suis ${formData.name}.\n\n` +
+        `📧 Email : ${formData.email}\n\n` +
+        `💬 Message : ${formData.message}\n\n` +
+        `Envoyé depuis ton portfolio.`
+
+      window.open(
+        `https://wa.me/22998123353?text=${encodeURIComponent(whatsappMessage)}`,
+        "_blank"
+      )
+
       setTimeout(() => setSubmitSuccess(false), 5000)
     } catch (error) {
-      console.error("Error:", error)
+      console.error("❌ Erreur:", error)
       setSubmitError(
         error instanceof Error
           ? error.message
-          : "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer.",
+          : "Une erreur est survenue lors de l’envoi du message. Veuillez réessayer."
       )
     } finally {
       setIsSubmitting(false)
     }
   }
-  
 
   const contactInfo = [
     {
@@ -95,15 +105,15 @@ export function ContactSection() {
     },
     {
       icon: <Phone className="h-5 w-5 sm:h-6 sm:w-6" />,
-      title: "Phone",
-      value: "+2290198123353",
-      link: "tel:+2290198123353",
+      title: "Téléphone",
+      value: "+22998123353",
+      link: "tel:+22998123353",
     },
     {
       icon: <MapPin className="h-5 w-5 sm:h-6 sm:w-6" />,
-      title: "Location",
+      title: "Localisation",
       value: "Cotonou, Bénin",
-      link: "https://maps.google.com/?q=9C4H%2BF4V%2C+Cotonou"
+      link: "https://maps.google.com/?q=9C4H%2BF4V%2C+Cotonou",
     },
   ]
 
@@ -115,6 +125,7 @@ export function ContactSection() {
             inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
+          {/* Bloc gauche : infos de contact */}
           <div className="space-y-4">
             <div className="space-y-2">
               <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
@@ -124,10 +135,11 @@ export function ContactSection() {
                 {t("contact.subtitle")}
               </p>
             </div>
+
             <div className="space-y-4">
-              {contactInfo.map((info, index) => (
+              {contactInfo.map((info, i) => (
                 <div
-                  key={index}
+                  key={i}
                   className="flex items-start gap-3 sm:gap-4 transition-all duration-300 hover:-translate-y-1 hover:translate-x-1 group"
                 >
                   <div className="rounded-full bg-primary/10 p-2 text-primary transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110">
@@ -150,6 +162,8 @@ export function ContactSection() {
               ))}
             </div>
           </div>
+
+          {/* Bloc droit : formulaire */}
           <div className="space-y-4">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
@@ -161,12 +175,11 @@ export function ContactSection() {
                     id="name"
                     name="name"
                     placeholder={t("contact.name")}
-                    
                     value={formData.name}
                     onChange={handleChange}
-                    className="text-sm transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
                   />
                 </div>
+
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-xs sm:text-sm font-medium">
                     {t("contact.email")}
@@ -174,15 +187,14 @@ export function ContactSection() {
                   <Input
                     id="email"
                     name="email"
-                    placeholder={t("contact.email")}
-                    
                     type="email"
+                    placeholder={t("contact.email")}
                     value={formData.email}
                     onChange={handleChange}
-                    className="text-sm transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
                   />
                 </div>
               </div>
+
               <div className="space-y-2">
                 <label htmlFor="message" className="text-xs sm:text-sm font-medium">
                   {t("contact.message")}
@@ -190,20 +202,18 @@ export function ContactSection() {
                 <Textarea
                   id="message"
                   name="message"
+                  rows={8}
                   placeholder={t("contact.message")}
-                  
-                  rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="text-sm transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               </div>
 
               {formError && (
-  <p className="rounded-lg text-center text-xl bg-red-100 p-3 sm:p-4 text-red-800 dark:bg-red-900/30 dark:text-red-400 transition-all duration-500 animate-in fade-in slide-in-from-bottom-5">
-    {t("contact.send.message")}
-  </p>
-)}
+                <p className="text-center text-red-600 text-sm font-medium">
+                  Veuillez remplir tous les champs requis.
+                </p>
+              )}
 
               <Button
                 type="submit"
@@ -212,14 +222,15 @@ export function ContactSection() {
               >
                 {isSubmitting ? t("contact.sending") : t("contact.send")}
               </Button>
-
             </form>
+
             {submitSuccess && (
               <div className="rounded-lg bg-green-100 p-3 sm:p-4 text-green-800 dark:bg-green-900/30 dark:text-green-400 transition-all duration-500 animate-in fade-in slide-in-from-bottom-5">
                 <p className="text-sm sm:text-base font-medium">{t("contact.success.title")}</p>
                 <p className="text-xs sm:text-sm">{t("contact.success.message")}</p>
               </div>
             )}
+
             {submitError && (
               <div className="rounded-lg bg-red-100 p-3 sm:p-4 text-red-800 dark:bg-red-900/30 dark:text-red-400 transition-all duration-500 animate-in fade-in slide-in-from-bottom-5">
                 <p className="text-sm sm:text-base font-medium">{t("contact.error.title")}</p>

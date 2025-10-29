@@ -17,6 +17,14 @@ export function ProjectsSection() {
   const projects = [
     
    {
+  titleKey: "Conférence des merveilles",
+  descriptionKey: "Création d'avatar pour la Conférence des merveilles de la Rhapsodie des Réalités.",
+  image: "/img/flyer.jpg?height=300&width=600",
+  liveUrl: "https://avatar-conf-merveilles.vercel.app",
+  githubUrl: "https://github.com/chrislove-josue/CE_BENIN_REP",
+},
+    
+   {
   titleKey: "AMAZING GROUP",
   descriptionKey: "Agence spécialisée en communication et projets : créativité, construction, transport, promotion et résultats.",
   image: "/img/logo_amazing_group.jpg?height=300&width=600",

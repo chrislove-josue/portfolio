@@ -4,7 +4,6 @@ import {
   ArrowDownIcon,
   Github,
   Gitlab,
-  Linkedin,
   Mail,
   Phone,
 } from "lucide-react"
@@ -48,12 +47,6 @@ export function HeroSection() {
               <a href="https://github.com/chrislove-josue" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="icon">
-              <a href="https://linkedin.com/in/chrislove-nestor" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </Button>
             <Button asChild variant="outline" size="icon">

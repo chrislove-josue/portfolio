@@ -15,32 +15,32 @@ export function SkillsSection() {
     {
       category: "Frontend",
       icon: <Layout className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["HTML5 & CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Tailwind CSS"],
+      items: ["TypeScript", "React JS",  "Tailwind CSS"],
     },
     {
       category: "Backend",
       icon: <Code2 className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Node.js", "RESTful APIs"],
+      items: ["Laravel", "RESTful APIs"],
     },
     {
       category: "Database",
       icon: <Database className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma"],
+      items: ["MongoDB", "MySQL", "Firebase", "Prisma"],
     },
     {
       category: "DevOps",
       icon: <Settings className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Git", "GitHub Actions", "Docker", "AWS", "Vercel", "Netlify"],
+      items: ["Git", "GitHub Actions", "Vercel", "Netlify"],
     },
     {
       category: "Design",
       icon: <Layers className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Figma", "Adobe XD", "UI/UX Principles", "Responsive Design", "Accessibility", "Dribbble"],
+      items: ["Figma", "Adobe XD", "UI/UX Design", "Dribbble"],
     },
     {
       category: "Other",
       icon: <Globe className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["SEO", "Performance Optimization", "Testing (Jest, Cypress)", "Agile Methodology"],
+      items: ["SEO", "Performance Optimization", "Agile Methodology"],
     },
   ]
 
