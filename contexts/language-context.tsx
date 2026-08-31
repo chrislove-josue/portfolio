@@ -12,6 +12,8 @@ type LanguageContextType = {
   t: (key: string) => string
 }
 
+
+
 // Créer le contexte
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
@@ -24,6 +26,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.skills": "Compétences",
     "nav.contact": "Contact",
 
+    
     // Hero Section
     "hero.title": "Bonjour, je suis",
     "hero.subtitle": "Développeur Full Stack spécialisé dans la création d'expériences numériques exceptionnelles",
