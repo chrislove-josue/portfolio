@@ -26,7 +26,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.skills": "Compétences",
     "nav.contact": "Contact",
 
-    
+
     // Hero Section
     "hero.title": "Bonjour, je suis",
     "hero.subtitle": "Développeur Full Stack spécialisé dans la création d'expériences numériques exceptionnelles",
@@ -213,8 +213,6 @@ const translations: Record<Language, Record<string, string>> = {
     "about.p3":
       "Cuando no estoy programando, me encontrarás haciendo senderismo, leyendo novelas de ciencia ficción o escuchando música.",
     "about.resume": "Descargar CV",
-
-
 
     // Projects Section
     "projects.title": "Mis Proyectos",
