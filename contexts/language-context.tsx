@@ -34,7 +34,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "À propos de moi",
     "about.p1":
-      "Je suis un développeur passionné avec une solide formation en technologies web et un œil attentif pour le design. Fort de plus de 2 ans d\'expérience, j\'ai travaillé sur une variété de projets, allant de sites web pour petites entreprises à des applications d'entreprise complexes. Je me spécialise également dans la création de sites e-commerce performants et attrayants, pensés pour optimiser l\'expérience utilisateur et augmenter les ventes en ligne.",
+      "Intégrateur de Solutions Open Source et Développeur Web full-stack autodidacte et engagé, avec plus de 2 ans d'expérience dans la conception de solutions sur mesure et l'intégration de plateformes open source (CMS, CRM, outils collaboratifs).",
     "about.p2":
       "Depuis que j\'ai découvert la programmation, un univers s\'est ouvert à moi. Le développement web, en particulier, est devenu bien plus qu\'un domaine technique : c\'est une véritable passion, un art mêlant créativité, logique et innovation. Depuis, je n\'ai cessé d'apprendre et de faire évoluer mes compétences pour rester à la pointe du développement web. Je crois en l\'écriture de code propre et maintenable et en la création d\'expériences utilisateur intuitives.",
     "about.p3":
@@ -94,7 +94,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "Mɛ̌ un ka nyí?",
     "about.p1":
-      "Un nyí nǔɖíɖótɔ́ ɖé bo ɖó nǔnywɛ syɛnsyɛn ɖò nǔnywɛ xwitixwiti sín nǔ lɛ mɛ, bo lɛ́ ɖó nukún ɖagbe dó nǔɖiɖó lɛ wu. Un ko w’azɔ̌ nú xwè 2 jɛji, bo ko w’azɔ̌ ɖò azɔ̌ vovo lɛ jí, bɛ́sín tɛn ɛntɛnɛti tɔn ajɔ̌wiwa tɔn kpɛví kpɛví lɛ jí kaka jɛ nǔ e è nɔ zán ɖò azɔ̌xwé lɛ é jí. Un lɛ́ tuùn azɔ̌ tawun bo nɔ bló tɛn ɛntɛnɛti tɔn e jí è nɔ sà nǔ ɖè bɔ ye nɔ w’azɔ̌ ganji bo nɔ lɛ́ dɔn mɛ lɛ é, bɔ è bló ye bonu mɛ e nɔ zán lɛ é na mɔ nǔ jɛ nǔ mɛ ganji, lobo na lɛ́ bló bɔ nǔ e è nɔ sà ɖò Ɛntɛnɛti jí lɛ é na jɛji.",
+      "Intégrateur de Solutions Open Source kpo Développeur Web full-stack autodidacte bo ɖò azɔ̌ ɖò xwè 2+ mɛ é, ɖò agbesunya sín nǔɖiɖó e mɛ́ lɛ kpo platforme open source (CMS, CRM, nuwiki azɔ̌ tɔn) kplé kpo.",
     "about.p2": "Sín hwenu e un mɔ tutoblonunu ɔ é ɔ, gbɛ̀ ɔ bǐ wɛ hun nú mì. Web developpement, ɖò taji ɔ, ko huzu nǔ hú nǔnywɛ xwitixwiti sín azɔ̌ ɖé: é nyí wanyiyi nǔgbo ɖé, nǔnywɛ xwitixwiti sín nǔ e nɔ xò nǔɖiɖó, linlin kpo nǔ yɔyɔ̌wiwa kpo kplé é. Sín hwenɛnu ɔ, un kpó ɖò nǔ kplɔ́n wɛ bo ɖò nǔwukpikpé ce lɛ jlaɖó wɛ bo na dó sixu nɔ nukɔn ɖò tɛn ɛntɛnɛti tɔn lɛ ɖiɖó ɖ’ayǐ mɛ. Un ɖi nǔ nú azɔ̌ e mɛ́, bɔ è sixu hɛn ɖ’ayǐ é kpo nǔ e mɛ e nɔ zán lɛ é nɔ mɔ nǔ jɛ wu lɛ é ɖiɖó kpo.",
     "about.p3": "Hwenu e un ma nɔ blo azɔ̌ internet tɔn ǎ, un nɔ yi zɔn, un nɔ xa wema alǒ un nɔ ɖa nǔ.",
     "about.resume": "Wema azɔ̌ ce tɔn",
@@ -146,8 +146,8 @@ const translations: Record<Language, Record<string, string>> = {
 
    // About Section
    "about.title": "About Me",
-   "about.p1":
-     "I'm a passionate developer with a solid background in web technologies and a keen eye for design. With over 2 years of experience, I've worked on a variety of projects, ranging from small business websites to complex enterprise applications. I also specialize in creating high-performing and attractive e-commerce websites designed to optimize the user experience and boost online sales.",
+    "about.p1":
+      "Open Source Solutions Integrator and self-taught Full-Stack Web Developer with over 2 years of experience in designing custom solutions and integrating open source platforms (CMS, CRM, collaboration tools).",
    "about.p2":
      "Since I discovered programming, a whole new world opened up to me. Web development, in particular, became more than just a technical field: it became a real passion, an art combining creativity, logic, and innovation. Since then, I've never stopped learning and evolving my skills to stay at the forefront of web development. I believe in writing clean, maintainable code and creating intuitive user experiences.",
    "about.p3":
@@ -207,7 +207,7 @@ const translations: Record<Language, Record<string, string>> = {
     // About Section
     "about.title": "Sobre Mí",
     "about.p1":
-      "Soy un desarrollador apasionado con una sólida formación en tecnologías web y un buen ojo para el diseño. Con más de 2 años de experiencia, he trabajado en una variedad de proyectos, desde sitios web para pequeñas empresas hasta aplicaciones empresariales complejas. También me especializo en crear sitios web de comercio electrónico atractivos y de alto rendimiento, diseñados para optimizar la experiencia del usuario y aumentar las ventas en línea.",
+      "Integrador de Soluciones Open Source y Desarrollador Web full-stack autodidacta y dedicado, con más de 2 años de experiencia en el diseño de soluciones a medida y la integración de plataformas open source (CMS, CRM, herramientas colaborativas).",
     "about.p2":
       "Desde que descubrí la programación, se abrió un mundo completamente nuevo para mí. El desarrollo web, en particular, se convirtió en algo más que un campo técnico: se convirtió en una verdadera pasión, un arte que combina creatividad, lógica e innovación. Desde entonces, nunca he dejado de aprender y evolucionar mis habilidades para mantenerme a la vanguardia del desarrollo web. Creo en escribir código limpio y mantenible y en crear experiencias de usuario intuitivas.",
     "about.p3":
@@ -268,7 +268,7 @@ const translations: Record<Language, Record<string, string>> = {
         // About Section
         "about.title": "Sobre Mim",
         "about.p1":
-          "Sou um desenvolvedor apaixonado com uma sólida formação em tecnologias web e um olhar atento para o design. Com mais de 2 anos de experiência, trabalhei em uma variedade de projetos, desde sites para pequenas empresas até aplicações empresariais complexas. Também me especializo na criação de sites de comércio eletrônico atrativos e de alto desempenho, projetados para otimizar a experiência do usuário e aumentar as vendas online.",
+          "Integrador de Soluções Open Source e Desenvolvedor Web full-stack autodidata e dedicado, com mais de 2 anos de experiência na concepção de soluções personalizadas e na integração de plataformas open source (CMS, CRM, ferramentas colaborativas).",
         "about.p2":
           "Desde que descobri a programação, um mundo completamente novo se abriu para mim. O desenvolvimento web, em particular, se tornou mais do que apenas uma área técnica: se tornou uma verdadeira paixão, uma arte que mistura criatividade, lógica e inovação. Desde então, nunca parei de aprender e evoluir minhas habilidades para me manter na vanguarda do desenvolvimento web. Acredito em escrever código limpo e sustentável e em criar experiências de usuário intuitivas.",
         "about.p3":
