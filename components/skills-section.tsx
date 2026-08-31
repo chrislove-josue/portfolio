@@ -30,7 +30,7 @@ export function SkillsSection() {
     {
       category: "DevOps",
       icon: <Settings className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />,
-      items: ["Git", "GitHub Actions", "Vercel", "Netlify"],
+      items: ["Git", "GitHub Actions", "Serveur Plesk"],
     },
     {
       category: "Design",
