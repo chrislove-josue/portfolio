@@ -15,21 +15,36 @@ export function ProjectsSection() {
   const { t } = useLanguage()
 
   const projects = [
+       
+   {
+  titleKey: " Fanfare Céleste La Trompette de Dieu de l'Atlantique",
+  descriptionKey: "Fanfare Céleste La Trompette de Dieu de l'Atlantique, une fanfare au service de Dieu et de la communauté chrétienne",
+  image: "/img/fctd.png?height=300&width=600",
+  liveUrl: "https://fctda.tdscloud.cloud/",
+  githubUrl: "https://github.com/chrislove-josue/fanfare-celeste",
+},
+   {
+  titleKey: "Hôtels Bénin",
+  descriptionKey: "La plateforme qui rassemble hôtels, résidences, villas et salles de fête du Bénin, pour préparer votre séjour en toute confiance.",
+  image: "/img/hb.png?height=300&width=600",
+  liveUrl: "https://hb.tdscloud.cloud/",
+  githubUrl: "https://github.com/chrislove-josue/hotels-benin-new",
+},
     
    {
   titleKey: "Conférence des merveilles",
   descriptionKey: "Création d'avatar pour la Conférence des merveilles de la Rhapsodie des Réalités.",
   image: "/img/flyer.jpg?height=300&width=600",
-  liveUrl: "https://avatar-conf-merveilles.vercel.app",
+  liveUrl: "",
   githubUrl: "https://github.com/chrislove-josue/CE_BENIN_REP",
 },
     
    {
   titleKey: "AMAZING GROUP",
   descriptionKey: "Agence spécialisée en communication et projets : créativité, construction, transport, promotion et résultats.",
-  image: "/img/logo_amazing_group.jpg?height=300&width=600",
+  image: "/img/amazing-group.png?height=300&width=600",
   liveUrl: "https://amazing-group.vercel.app",
-  githubUrl: "https://github.com/chrislove-josue/amazing-group.git",
+  githubUrl: "https://github.com/chrislove-josue/amazing-group",
 },
 
     {
