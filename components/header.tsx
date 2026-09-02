@@ -20,6 +20,7 @@ export function Header() {
     { id: "about", label: t("nav.about") },
     { id: "projects", label: t("nav.projects") },
     { id: "skills", label: t("nav.skills") },
+    { id: "packs", label: t("nav.packs") },
     { id: "contact", label: t("nav.contact") },
   ]
 

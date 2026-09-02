@@ -74,7 +74,7 @@ const translations: Record<Language, Record<string, string>> = {
     "packs.basique.badge": "Pack Basique",
     "packs.basique.name": "Vitrine",
     "packs.basique.for": "Pour indépendants, associations et petites structures souhaitant une présence en ligne professionnelle.",
-    "packs.basique.delay": "5 à 10 jours",
+    "packs.basique.delay": "1 à 2 Semaines",
     "packs.basique.price": "75 000 – 150 000 FCFA",
     "packs.basique.features.count": "6",
     "packs.basique.features.0": "Site vitrine 1 à 5 pages (Accueil, À propos, Services, Contact...)",
@@ -105,7 +105,7 @@ const translations: Record<Language, Record<string, string>> = {
     "packs.premium.delay": "4 à 10 semaines (selon complexité)",
     "packs.premium.price": "À partir de 700 000 FCFA",
     "packs.premium.features.count": "9",
-    "packs.premium.features.0": "Application web sur mesure (React/Next.js, TypeScript, Tailwind)",
+    "packs.premium.features.0": "Application web sur mesure )",
     "packs.premium.features.1": "Backend robuste (Laravel, API RESTful) et base de données adaptée",
     "packs.premium.features.2": "Intégration de plateformes open source (CMS, CRM, outils collaboratifs)",
     "packs.premium.features.3": "UI/UX Design personnalisé (maquettes Figma / Adobe XD)",
@@ -474,6 +474,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.about": "Sobre",
     "nav.projects": "Projetos",
     "nav.skills": "Habilidades",
+    "nav.packs": "Pacotes",
     "nav.contact": "Contato",
 
         // Hero Section
