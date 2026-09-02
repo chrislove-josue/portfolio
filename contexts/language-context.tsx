@@ -104,7 +104,7 @@ const translations: Record<Language, Record<string, string>> = {
     "packs.premium.for": "Pour entreprises et projets à forte valeur ajoutée nécessitant une application web complète ou des intégrations complexes.",
     "packs.premium.delay": "4 à 12 semaines (selon complexité)",
     "packs.premium.price": "À partir de 500 000 FCFA",
-    "packs.premium.features.count": "9",
+    "packs.premium.features.count": "8",
     "packs.premium.features.0": "Application web sur mesure )",
     "packs.premium.features.1": "Intégration de plateformes open source (CMS, CRM, outils collaboratifs)",
     "packs.premium.features.2": "UI/UX Design personnalisé (maquettes Figma / Adobe XD)",
