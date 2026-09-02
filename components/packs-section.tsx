@@ -1,7 +1,7 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
-import { Check, Phone, ArrowRight } from "lucide-react"
+import { Check, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 
