@@ -163,11 +163,11 @@ export function PacksSection() {
                   </ul>
 
                   <div className="px-6 pb-2 mb-2">
-                    <div className="rounded-lg border border-dashed border-gray-200 dark:border-gray-700 px-3 py-2 text-center">
-                      <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500">
+                    <div className="rounded-xl border border-dashed border-red-200 dark:border-red-900 bg-red-50/50 dark:bg-red-950/20 px-4 py-3 text-center">
+                      <p className="text-xs font-bold uppercase tracking-wider text-red-500 dark:text-red-400 mb-1">
                         {t("packs.hosting.title")}
                       </p>
-                      <p className="text-xs font-medium text-gray-600 dark:text-gray-300">
+                      <p className="text-sm font-semibold text-gray-700 dark:text-gray-200">
                         {t("packs.hosting.value")}
                       </p>
                     </div>
