@@ -71,12 +71,6 @@ export function PacksSection() {
   })
   const { t } = useLanguage()
 
-  const ctaUrl =
-    "https://wa.me/22998123353?text=" +
-    encodeURIComponent(
-      "Bonjour, je suis intéressé par vos packs de services. Pourriez-vous m'en dire plus ?"
-    )
-
   return (
     <section id="packs" ref={ref} className="py-8 md:py-16 lg:py-24 bg-muted/40">
       <div className="container px-4 md:px-6">
@@ -108,6 +102,13 @@ export function PacksSection() {
               const addonKey = `packs.${id}.addon`
               const addonText = t(addonKey)
               const hasAddon = addonText !== addonKey && addonText.trim().length > 0
+
+              const ctaMessage = t("packs.cta.message").replace(
+                "{pack}",
+                `${t(`packs.${id}.name`)} (${t(`packs.${id}.badge`)})`
+              )
+              const ctaUrl =
+                "https://wa.me/22998123353?text=" + encodeURIComponent(ctaMessage)
 
               return (
                 <div
