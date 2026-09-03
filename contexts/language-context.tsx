@@ -272,11 +272,23 @@ const translations: Record<Language, Record<string, string>> = {
 // Fournisseur de contexte
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // État pour stocker la langue actuelle
-  const [language, setLanguage] = useState<Language>("fr")
+  const [language, setLanguageState] = useState<Language>("fr")
+
+  // Ne jamais accepter une langue qui n'existe pas dans le dictionnaire
+  // (protège contre un sélecteur de langue pas encore mis à jour, ou une
+  // ancienne valeur "es"/"pt"/"fon" restée dans le localStorage d'un visiteur)
+  const setLanguage = (lang: Language) => {
+    if (lang === "fr" || lang === "en") {
+      setLanguageState(lang)
+    } else {
+      setLanguageState("fr")
+    }
+  }
 
   // Fonction pour obtenir une traduction
   const t = (key: string): string => {
-    return translations[language][key] || key
+    const dict = translations[language] ?? translations.fr
+    return dict[key] || key
   }
 
   // Sauvegarder la langue dans localStorage
@@ -291,7 +303,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     if (typeof window !== "undefined") {
       const savedLanguage = localStorage.getItem("language") as Language
       if (savedLanguage && ["fr", "en"].includes(savedLanguage)) {
-        setLanguage(savedLanguage)
+        setLanguageState(savedLanguage)
+      } else if (savedLanguage) {
+        // Ancienne langue (es/pt/fon) qui n'existe plus : on nettoie et on repart sur fr
+        localStorage.setItem("language", "fr")
+        setLanguageState("fr")
       }
     }
   }, [])
