@@ -2,8 +2,8 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 
-// Définir les langues disponibles
-export type Language = "fr" | "en"
+// Définir les langues disponibles pour le site
+export type Language = "fr" | "fon" | "en" | "es" | "pt"
 
 // Structure du contexte
 type LanguageContextType = {
@@ -12,12 +12,16 @@ type LanguageContextType = {
   t: (key: string) => string
 }
 
-
-
 // Créer le contexte
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 // Dictionnaire de traductions
+// NOTE IMPORTANTE : la section "Packs de services" (clés "packs.*") n'est
+// disponible qu'en français (fr) et en anglais (en). Pour fon/es/pt, ces
+// clés sont volontairement absentes : la fonction t() plus bas retombe
+// automatiquement sur le français pour ces clés-là, quelle que soit la
+// langue choisie par le visiteur. Le reste du site (nav, hero, about,
+// projects, skills, contact, footer) reste disponible dans les 5 langues.
 const translations: Record<Language, Record<string, string>> = {
   fr: {
     // Navigation
@@ -144,6 +148,63 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.rights": "Tous droits réservés.",
   },
 
+  fon: {
+    // Navigation
+    "nav.about": "Mɛ̌ un ka nyí",
+    "nav.projects": "Azɔ̌ ce lɛ",
+    "nav.skills": "Nǔwukpikpé ce lɛ",
+    "nav.packs": "Azɔ̌ kplé",
+    "nav.contact": "Ylɔ̌ mi",
+
+    // Hero Section
+    "hero.title": "Un do gbe nu mi, nye wɛ nyí",
+    "hero.subtitle": "Mɛ e nɔ blo azɔ̌ internet tɔn ganji",
+
+    // About Section
+    "about.title": "Mɛ̌ un ka nyí?",
+    "about.p1":
+      "Intégrateur de Solutions Open Source kpo Développeur Web full-stack autodidacte bo ɖò azɔ̌ ɖò xwè 2+ mɛ é, ɖò agbesunya sín nǔɖiɖó e mɛ́ lɛ kpo platforme open source (CMS, CRM, nuwiki azɔ̌ tɔn) kplé kpo.",
+    "about.p2": "Sín hwenu e un mɔ tutoblonunu ɔ é ɔ, gbɛ̀ ɔ bǐ wɛ hun nú mì. Web developpement, ɖò taji ɔ, ko huzu nǔ hú nǔnywɛ xwitixwiti sín azɔ̌ ɖé: é nyí wanyiyi nǔgbo ɖé, nǔnywɛ xwitixwiti sín nǔ e nɔ xò nǔɖiɖó, linlin kpo nǔ yɔyɔ̌wiwa kpo kplé é. Sín hwenɛnu ɔ, un kpó ɖò nǔ kplɔ́n wɛ bo ɖò nǔwukpikpé ce lɛ jlaɖó wɛ bo na dó sixu nɔ nukɔn ɖò tɛn ɛntɛnɛti tɔn lɛ ɖiɖó ɖ’ayǐ mɛ. Un ɖi nǔ nú azɔ̌ e mɛ́, bɔ è sixu hɛn ɖ’ayǐ é kpo nǔ e mɛ e nɔ zán lɛ é nɔ mɔ nǔ jɛ wu lɛ é ɖiɖó kpo.",
+    "about.p3": "Hwenu e un ma nɔ blo azɔ̌ internet tɔn ǎ, un nɔ yi zɔn, un nɔ xa wema alǒ un nɔ ɖa nǔ.",
+    "about.resume": "Wema azɔ̌ ce tɔn",
+
+    // Projects Section
+    "projects.title": "azɔ̌ ce lɛ",
+    "projects.subtitle": "azɔ̌ ɖé lɛ e un ko wa. azɔ̌ ɖokpó ɖokpó ɖo nǔ e un plɔn sín.",
+    "projects.ecommerce.title": "Sinsɛn sɔ nǔ tɔn",
+    "projects.ecommerce.description": "Sinsɛn sɔ nǔ tɔn e ɖo nǔ susu.",
+    "projects.taskapp.title": "Sinsɛn azɔ̌ tɔn",
+    "projects.taskapp.description": "Sinsɛn azɔ̌ tɔn e nɔ ná mɛ lɛ blo azɔ̌ kplé.",
+    "projects.weather.title": "Sinsɛn jijɛ tɔn",
+    "projects.weather.description": "Sinsɛn e nɔ ná mɛ lɛ mɔ jijɛ tɛnmɛ tɛnmɛ tɔn.",
+    "projects.code": "Wěma",
+    "projects.demo": "Kpɔn",
+
+    // Skills Section
+    "skills.title": "Nǔwukpikpé ce lɛ",
+    "skills.subtitle": "Un ko plɔn nǔ susu. Nukunnumɔ jɛ nu mɛ ce lɛ ɖíe.",
+
+    // Packs Section : volontairement absente en fon (voir note en haut du
+    // fichier) — repli automatique vers le français assuré par t().
+
+    // Contact Section
+    "contact.title": "Ylɔ̌ mi",
+    "contact.subtitle": "A ɖo azɔ̌ ɖé a jlo na wa a? Ylɔ̌ mi!",
+    "contact.name": "Nyíkɔ",
+    "contact.email": "Email",
+    "contact.message": "Wɛn",
+    "contact.send": "Sɛ wɛn ɔ do",
+    "contact.sending": "E ɖo wɛn ɔ sɛ do wɛ...",
+    "contact.success.title": "Akpé!",
+    "contact.success.message": "Un ko mɔ wɛn towe. Un na yí gbe na we kpɛɖé.",
+    "contact.error.title": "Nǔ ɖé jɛ",
+"contact.send.message": "Nu bi ɖo dandan mɛ",
+
+
+    // Footer
+    "footer.rights": "Acɛ lɛ bí.",
+  },
+
   en: {
     // Navigation
     "nav.about": "About",
@@ -267,6 +328,137 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     "footer.rights": "All rights reserved.",
   },
+
+  es: {
+    // Navigation
+    "nav.about": "Sobre mí",
+    "nav.projects": "Proyectos",
+    "nav.skills": "Habilidades",
+    "nav.packs": "Paquetes",
+    "nav.contact": "Contacto",
+
+      // Hero Section
+    "hero.title": "Hola, soy",
+    "hero.subtitle": "Desarrollador Full Stack especializado en crear experiencias digitales excepcionales",
+
+    // About Section
+    "about.title": "Sobre Mí",
+    "about.p1":
+      "Integrador de Soluciones Open Source y Desarrollador Web full-stack autodidacta y dedicado, con más de 2 años de experiencia en el diseño de soluciones a medida y la integración de plataformas open source (CMS, CRM, herramientas colaborativas).",
+    "about.p2":
+      "Desde que descubrí la programación, se abrió un mundo completamente nuevo para mí. El desarrollo web, en particular, se convirtió en algo más que un campo técnico: se convirtió en una verdadera pasión, un arte que combina creatividad, lógica e innovación. Desde entonces, nunca he dejado de aprender y evolucionar mis habilidades para mantenerme a la vanguardia del desarrollo web. Creo en escribir código limpio y mantenible y en crear experiencias de usuario intuitivas.",
+    "about.p3":
+      "Cuando no estoy programando, me encontrarás haciendo senderismo, leyendo novelas de ciencia ficción o escuchando música.",
+    "about.resume": "Descargar CV",
+
+    // Projects Section
+    "projects.title": "Mis Proyectos",
+    "projects.subtitle":
+      "Aquí hay algunos de los proyectos en los que he trabajado. Cada uno representa un desafío único y una experiencia de aprendizaje.",
+    "projects.ecommerce.title": "Plataforma de Comercio Electrónico",
+    "projects.ecommerce.description":
+      "Una plataforma de comercio electrónico completa con gestión de productos, funcionalidad de carrito y procesamiento de pagos.",
+    "projects.taskapp.title": "Aplicación de Gestión de Tareas",
+    "projects.taskapp.description":
+      "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de colaboración en equipo.",
+    "projects.weather.title": "Panel de Control del Clima",
+    "projects.weather.description":
+      "Un panel de control del clima que muestra datos meteorológicos actuales y pronosticados para múltiples ubicaciones.",
+    "projects.code": "Código",
+    "projects.demo": "Demo",
+
+    // Skills Section
+    "skills.title": "Habilidades y Experiencia",
+    "skills.subtitle":
+      "He desarrollado un conjunto diverso de habilidades a lo largo de mi carrera. Aquí hay una instantánea de mi experiencia técnica.",
+
+    // Packs Section : volontairement absente en espagnol (voir note en haut
+    // du fichier) — repli automatique vers le français assuré par t().
+
+    // Contact Section
+    "contact.title": "Ponte en Contacto",
+    "contact.subtitle":
+      "¿Tienes un proyecto en mente o quieres discutir oportunidades potenciales? ¡No dudes en contactarme!",
+    "contact.name": "Nombre",
+    "contact.email": "Correo electrónico",
+    "contact.message": "Mensaje",
+    "contact.send": "Enviar Mensaje",
+    "contact.sending": "Enviando...",
+    "contact.success.title": "¡Gracias por tu mensaje!",
+    "contact.success.message": "Tu mensaje ha sido enviado con éxito. Te responderé lo antes posible.",
+    "contact.error.title": "Error",
+"contact.send.message": "Todos los campos son obligatorios.",
+
+
+    // Footer
+    "footer.rights": "Todos los derechos reservados.",
+  },
+
+  pt: {
+    // Navigation
+    "nav.about": "Sobre",
+    "nav.projects": "Projetos",
+    "nav.skills": "Habilidades",
+    "nav.packs": "Pacotes",
+    "nav.contact": "Contato",
+
+        // Hero Section
+        "hero.title": "Olá, eu sou",
+        "hero.subtitle": "Desenvolvedor Full Stack especializado na criação de experiências digitais excepcionais",
+    
+        // About Section
+        "about.title": "Sobre Mim",
+        "about.p1":
+          "Integrador de Soluções Open Source e Desenvolvedor Web full-stack autodidata e dedicado, com mais de 2 anos de experiência na concepção de soluções personalizadas e na integração de plataformas open source (CMS, CRM, ferramentas colaborativas).",
+        "about.p2":
+          "Desde que descobri a programação, um mundo completamente novo se abriu para mim. O desenvolvimento web, em particular, se tornou mais do que apenas uma área técnica: se tornou uma verdadeira paixão, uma arte que mistura criatividade, lógica e inovação. Desde então, nunca parei de aprender e evoluir minhas habilidades para me manter na vanguarda do desenvolvimento web. Acredito em escrever código limpo e sustentável e em criar experiências de usuário intuitivas.",
+        "about.p3":
+          "Quando não estou programando, você pode me encontrar fazendo trilhas, lendo romances de ficção científica ou ouvindo música.",
+        "about.resume": "Baixar CV",
+    
+
+    // Projects Section
+    "projects.title": "Meus Projetos",
+    "projects.subtitle":
+      "Aqui estão alguns dos projetos em que trabalhei. Cada um representa um desafio único e uma experiência de aprendizado.",
+    "projects.ecommerce.title": "Plataforma de E-commerce",
+    "projects.ecommerce.description":
+      "Uma plataforma de e-commerce completa com gerenciamento de produtos, funcionalidade de carrinho e processamento de pagamentos.",
+    "projects.taskapp.title": "Aplicativo de Gerenciamento de Tarefas",
+    "projects.taskapp.description":
+      "Um aplicativo colaborativo de gerenciamento de tarefas com atualizações em tempo real e recursos de colaboração em equipe.",
+    "projects.weather.title": "Painel de Controle do Clima",
+    "projects.weather.description":
+      "Um painel de controle do clima que exibe dados meteorológicos atuais e previstos para vários locais.",
+    "projects.code": "Código",
+    "projects.demo": "Demo",
+
+    // Skills Section
+    "skills.title": "Habilidades e Experiência",
+    "skills.subtitle":
+      "Desenvolvi um conjunto diversificado de habilidades ao longo da minha carreira. Aqui está um panorama da minha experiência técnica.",
+
+    // Packs Section : volontairement absente en portugais (voir note en
+    // haut du fichier) — repli automatique vers le français assuré par t().
+
+    // Contact Section
+    "contact.title": "Entre em Contato",
+    "contact.subtitle":
+      "Tem um projeto em mente ou quer discutir oportunidades potenciais? Não hesite em entrar em contato!",
+    "contact.name": "Nome",
+    "contact.email": "Email",
+    "contact.message": "Mensagem",
+    "contact.send": "Enviar Mensagem",
+    "contact.sending": "Enviando...",
+    "contact.success.title": "Obrigado pela sua mensagem!",
+    "contact.success.message": "Sua mensagem foi enviada com sucesso. Entrarei em contato o mais breve possível.",
+    "contact.error.title": "Erro",
+"contact.send.message": "Todos os campos são obrigatórios.",
+
+
+    // Footer
+    "footer.rights": "Todos os direitos reservados.",
+  },
 }
 
 // Fournisseur de contexte
@@ -275,10 +467,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>("fr")
 
   // Ne jamais accepter une langue qui n'existe pas dans le dictionnaire
-  // (protège contre un sélecteur de langue pas encore mis à jour, ou une
-  // ancienne valeur "es"/"pt"/"fon" restée dans le localStorage d'un visiteur)
   const setLanguage = (lang: Language) => {
-    if (lang === "fr" || lang === "en") {
+    if (["fr", "fon", "en", "es", "pt"].includes(lang)) {
       setLanguageState(lang)
     } else {
       setLanguageState("fr")
@@ -288,7 +478,19 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Fonction pour obtenir une traduction
   const t = (key: string): string => {
     const dict = translations[language] ?? translations.fr
-    return dict[key] || key
+
+    if (dict[key] !== undefined) {
+      return dict[key]
+    }
+
+    // Repli spécifique à la section Packs : si la clé "packs.*" n'existe
+    // pas dans la langue courante (fon/es/pt), on affiche la version
+    // française plutôt qu'une clé brute ou un plantage.
+    if (key.startsWith("packs.") && translations.fr[key] !== undefined) {
+      return translations.fr[key]
+    }
+
+    return key
   }
 
   // Sauvegarder la langue dans localStorage
@@ -302,12 +504,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedLanguage = localStorage.getItem("language") as Language
-      if (savedLanguage && ["fr", "en"].includes(savedLanguage)) {
+      if (savedLanguage && ["fr", "fon", "en", "es", "pt"].includes(savedLanguage)) {
         setLanguageState(savedLanguage)
-      } else if (savedLanguage) {
-        // Ancienne langue (es/pt/fon) qui n'existe plus : on nettoie et on repart sur fr
-        localStorage.setItem("language", "fr")
-        setLanguageState("fr")
       }
     }
   }, [])
