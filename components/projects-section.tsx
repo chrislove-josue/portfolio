@@ -43,17 +43,16 @@ export function ProjectsSection() {
   titleKey: "AMAZING GROUP",
   descriptionKey: "Agence spécialisée en communication et projets : créativité, construction, transport, promotion et résultats.",
   image: "/img/amazing-group.png?height=300&width=600",
-  liveUrl: "#",
   githubUrl: "https://github.com/chrislove-josue/amazing-group",
 },
 
-    {
-      titleKey: "Nextmux Devis",
-      descriptionKey: "Gestion des devis et factures",
-      image: "/img/Nextmux-white.png?height=300&width=600",
-      liveUrl: "https://nextmux.net/ecosystem/portfolio",
+    //{
+    //  titleKey: "Nextmux Devis",
+    //  descriptionKey: "Gestion des devis et factures",
+     // image: "/img/Nextmux-white.png?height=300&width=600",
+     // liveUrl: "https://nextmux.net/ecosystem/portfolio",
 
-    },
+   // },
     {
       titleKey: "Eazzy Lotto",
       descriptionKey: "Une plateforme de prédiction de combinaisons gagnantes de lotterie.",
