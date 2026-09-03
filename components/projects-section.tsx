@@ -57,7 +57,7 @@ export function ProjectsSection() {
       titleKey: "Eazzy Lotto",
       descriptionKey: "Une plateforme de prédiction de combinaisons gagnantes de lotterie.",
       image: "/img/eazyloto.png?height=300&width=600",
-      liveUrl: "https://www.eazzylotto.com",
+      liveUrl: "https://www.figma.com/proto/4bikdh7fGsojlI9mDMlDBs/Eazzylotto?node-id=4-27&starting-point-node-id=4%3A27",
       githubUrl: "https://github.com/VarDumpMan/eazzylotto.git",
 
     },
