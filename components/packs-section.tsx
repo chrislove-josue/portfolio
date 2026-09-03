@@ -1,7 +1,7 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
-import { Check, ArrowRight } from "lucide-react"
+import { Check, ArrowRight, Plus } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
 
@@ -102,6 +102,13 @@ export function PacksSection() {
               const config = packConfig[id]
               const isPremium = id === "standard"
 
+              // La clé addon est optionnelle : si elle n'existe pas dans le
+              // dictionnaire de traductions, t() renvoie la clé brute telle
+              // quelle. On ne l'affiche donc que si une vraie traduction existe.
+              const addonKey = `packs.${id}.addon`
+              const addonText = t(addonKey)
+              const hasAddon = addonText !== addonKey && addonText.trim().length > 0
+
               return (
                 <div
                   key={id}
@@ -161,6 +168,24 @@ export function PacksSection() {
                       </li>
                     ))}
                   </ul>
+
+                  {hasAddon && (
+                    <div className="px-6 mb-4">
+                      <div className="flex items-start gap-2.5 rounded-xl border border-dashed border-amber-300 dark:border-amber-800 bg-amber-50/60 dark:bg-amber-950/20 px-4 py-3">
+                        <div className="mt-0.5 rounded-full bg-amber-100 dark:bg-amber-900/50 p-0.5 shrink-0">
+                          <Plus className="h-3 w-3 text-amber-600 dark:text-amber-400" />
+                        </div>
+                        <div>
+                          <p className="text-[10px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-0.5">
+                            {t("packs.addon.label")}
+                          </p>
+                          <span className="text-sm text-gray-600 dark:text-gray-300 leading-snug">
+                            {addonText}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
 
                   <div className="px-6 pb-2 mb-2">
                     <div className="rounded-xl border border-dashed border-red-200 dark:border-red-900 bg-red-50/50 dark:bg-red-950/20 px-4 py-3 text-center">
