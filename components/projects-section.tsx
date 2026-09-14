@@ -87,12 +87,12 @@ export function ProjectsSection() {
 
     },
 
-    {
-      titleKey: "Solink",
-      descriptionKey: "Une plateforme internationale de publications, d'annonces et d'échanges de service.",
-      image: "/img/solink.png?height=300&width=600",
-      liveUrl: "https://www.solink.fr",
-    },
+   // {
+    // titleKey: "Solink",
+    //  descriptionKey: "Une plateforme internationale de publications, d'annonces et d'échanges de service.",
+    //  image: "/img/solink.png?height=300&width=600",
+    //  liveUrl: "https://www.solink.fr",
+    //},
 
     {
       titleKey: "PREMIER CLASS SOCCER",
