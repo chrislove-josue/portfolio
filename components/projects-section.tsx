@@ -46,6 +46,13 @@ export function ProjectsSection() {
   githubUrl: "https://github.com/chrislove-josue/amazing-group",
 },
 
+    {
+      titleKey: "Application de jeux(jeu de mémoire et de devinette de nombre caché)",
+      descriptionKey: "Solution de géolocalisation et de protection d'appareils électroniques. Localisez, protégez et récupérez vos appareils.",
+      image: "/img/fmd.png?height=300&width=600",
+      liveUrl: "https://fmd.tdscloud.cloud/",
+      githubUrl: "https://github.com/chrislove-josue/Find-My-Device",
+    },
     //{
     //  titleKey: "Nextmux Devis",
     //  descriptionKey: "Gestion des devis et factures",
