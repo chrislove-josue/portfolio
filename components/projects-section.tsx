@@ -49,7 +49,7 @@ export function ProjectsSection() {
     {
       titleKey: "Application de jeux (jeu de mémoire et de devinette de nombre caché)",
       descriptionKey: "Application de jeux de mémoire et de devinette de nombre caché pour tester vos compétences cognitives et votre capacité à résoudre des énigmes.",
-      image: "/img/fmd.png?height=300&width=600",
+      image: "/img/memory.png?height=300&width=600",
       liveUrl: "https://club-1778796717158.web.app/",
       githubUrl: "https://github.com/chrislove-josue/mon_app",
     },
