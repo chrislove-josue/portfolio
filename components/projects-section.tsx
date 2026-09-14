@@ -61,10 +61,17 @@ export function ProjectsSection() {
 
     },
     {
+      titleKey: "Find My Device",
+      descriptionKey: "Solution de géolocalisation et de protection d'appareils électroniques. Localisez, protégez et récupérez vos appareils.",
+      image: "/img/eazyloto.png?height=300&width=600",
+      liveUrl: "https://fmd.tdscloud.cloud/",
+      githubUrl: "https://github.com/chrislove-josue/Find-My-Device",
+    },
+    {
       titleKey: "GPI GBEWA",
       descriptionKey: "Logiciel d'administration des activités internes du projet Gbewa",
       image: "/img/gbewa.png?height=300&width=600",
-      liveUrl: "https://www.figma.com/proto/c7boN2bUS9OkXOF7rAmizA/PGI-Gbewa?node-id=743-21874&starting-point-node-id=743%3A21874",
+      liveUrl: "https://fmd.tdscloud.cloud/",
     },
     {
       titleKey: "Asebat",
