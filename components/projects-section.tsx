@@ -61,9 +61,9 @@ export function ProjectsSection() {
 
     },
     {
-      titleKey: "Find My Device",
+      titleKey: "Find My Device (Excercice de fin d'apprentissage)",
       descriptionKey: "Solution de géolocalisation et de protection d'appareils électroniques. Localisez, protégez et récupérez vos appareils.",
-      image: "/img/eazyloto.png?height=300&width=600",
+      image: "/img/fmd.png?height=300&width=600",
       liveUrl: "https://fmd.tdscloud.cloud/",
       githubUrl: "https://github.com/chrislove-josue/Find-My-Device",
     },
