@@ -116,7 +116,7 @@ const translations: Record<Language, Record<string, string>> = {
     "packs.premium.badge": "Premium",
     "packs.premium.name": "Sur-mesure",
     "packs.premium.for": "Pour entreprises et projets à forte valeur ajoutée nécessitant une application web complète ou des intégrations complexes.",
-    "packs.premium.delay": "4 à 12 semaines",
+    "packs.premium.delay": "5 à 12 semaines",
     "packs.premium.price": "À partir de 500 000 FCFA",
     "packs.premium.features.count": "10",
     "packs.premium.features.0": "Application web sur mesure, moderne et évolutive",
